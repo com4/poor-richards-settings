@@ -1,6 +1,6 @@
 # Poor Richard's Settings Framework
 Defines a simple settings framework targeting values set via environment
-variables. This file is self contained and can by copy and pasted to other
+variables. PRSF is self contained and should be copy and pasted to other
 projects which need global application settings.
 
 ## Features:
@@ -9,6 +9,7 @@ projects which need global application settings.
 * Automatically pull values from environment variables and set on your class
 * Simple static class (no singletons)
 * Typecast primitive types via hints (int, bool, str)
+* Thread safe
 
 
 ## Usage
@@ -36,7 +37,7 @@ print("All required settings are defined")
 
 ## Upgrading
 You'll have to manually make your changes if you copy/pasted into your
-application.  Use `git diff` or Github to diff the you're currently on version
-with the latest version. The functions should be replaceable and changes to the
-Settings class minimal. PSRF uses semantic versioning so backward incompatible
-changes will be noted with a new major version number.
+application.  Use `git diff` or Github to diff the version you're currently on
+with the target or latest version. The functions should be replaceable and
+changes to the Settings class minimal. PSRF uses semantic versioning so
+backward incompatible changes will be noted with a new major version number.
