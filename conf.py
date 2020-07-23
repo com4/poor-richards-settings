@@ -24,7 +24,7 @@ import logging
 import os
 import sys
 import threading
-from typing import Dict, get_type_hints, List, Tuple
+from typing import get_type_hints, List, Tuple
 
 # Uses the module name for a cleaner logger name
 logger = logging.getLogger(__name__.split(".")[0])
